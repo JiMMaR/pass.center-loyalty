@@ -254,7 +254,7 @@ class LoyaltyPass(object):
 		Use show_offer_card as a template dictionary then change it """
 		resource = '/programs/%s/offers/%s/card' % (program_id, offer_id)
 		return self.__call('put',resource,dictionary)
-####
+		
 
 	def list_offer_card_images(self, program_id, offer_id):
 		"""List the offer card images (except icon). """
