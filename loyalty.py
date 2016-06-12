@@ -391,7 +391,6 @@ class LoyaltyPass(object):
 			raise PassCenterApiException(response.status_code, response.content)
 
 		if response.headers['content-type'].startswith('application/json'):
-			print "as json"
 			return response.json()
 		else:
 			return response.content
